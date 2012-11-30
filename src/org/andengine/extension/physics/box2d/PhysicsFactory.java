@@ -50,10 +50,25 @@ public class PhysicsFactory {
 	// Methods for/from SuperClass/Interfaces
 	// ===========================================================
 
+	/**
+	 * 
+	 * @param pDensity 密度(The density, usually in kg/m^2.)
+	 * @param pElasticity 弹力(The restitution (elasticity) usually in the range [0,1]. )
+	 * @param pFriction 摩擦力(The friction coefficient, usually in the range [0,1].)
+	 * @return
+	 */
 	public static FixtureDef createFixtureDef(final float pDensity, final float pElasticity, final float pFriction) {
 		return PhysicsFactory.createFixtureDef(pDensity, pElasticity, pFriction, false);
 	}
 
+	/**
+	 * 
+	 * @param pDensity 密度(The density, usually in kg/m^2.)
+	 * @param pElasticity 弹力(The restitution (elasticity) usually in the range [0,1]. )
+	 * @param pFriction 摩擦力(The friction coefficient, usually in the range [0,1].)
+	 * @param pSensor 传感器(The friction coefficient, usually in the range [0,1].)
+	 * @return
+	 */
 	public static FixtureDef createFixtureDef(final float pDensity, final float pElasticity, final float pFriction, final boolean pSensor) {
 		final FixtureDef fixtureDef = new FixtureDef();
 		fixtureDef.density = pDensity;
