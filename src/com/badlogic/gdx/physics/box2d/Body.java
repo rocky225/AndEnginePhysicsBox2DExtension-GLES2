@@ -21,7 +21,8 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 
 /**
- * A rigid body. These are created via World.CreateBody.
+ * A rigid body. These are created via World.CreateBody.<br>
+ * 刚体,通过World.CreateBody()方法创建
  * @author mzechner
  * 
  */
