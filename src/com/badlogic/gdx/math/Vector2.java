@@ -60,6 +60,8 @@ public final class Vector2 {
 	}
 
 	/**
+	 * 返回该向量的模
+	 * 
 	 * @return The euclidian length
 	 */
 	public float len () {
@@ -67,6 +69,8 @@ public final class Vector2 {
 	}
 
 	/**
+	 * 返回该向量的模的平方
+	 * 
 	 * @return The squared euclidian length
 	 */
 	public float len2 () {
@@ -121,7 +125,8 @@ public final class Vector2 {
 	}
 
 	/**
-	 * Adds the given vector to this vector
+	 * Adds the given vector to this vector<br>
+	 * a+b=(x+x'，y+y')...(a,b为向量)
 	 * @param v The vector
 	 * @return This vector for chaining
 	 */
@@ -132,7 +137,8 @@ public final class Vector2 {
 	}
 
 	/**
-	 * Adds the given components to this vector
+	 * Adds the given components to this vector<br>
+	 * a+b=(x+x'，y+y')...(a,b为向量)
 	 * @param x The x-component
 	 * @param y The y-component
 	 * @return This vector for chaining
@@ -144,6 +150,8 @@ public final class Vector2 {
 	}
 
 	/**
+	 * 向量的数量积的坐标表示：a·b=x·x'+y·y'
+	 * 
 	 * @param v The other vector
 	 * @return The dot product between this and the other vector
 	 */
@@ -163,6 +171,8 @@ public final class Vector2 {
 	}
 
 	/**
+	 * 两向量之间的长度
+	 * 
 	 * @param v The other vector
 	 * @return the distance between this and the other vector
 	 */
@@ -173,6 +183,8 @@ public final class Vector2 {
 	}
 
 	/**
+	 * 两向量之间的长度
+	 * 
 	 * @param x The x-component of the other vector
 	 * @param y The y-component of the other vector
 	 * @return the distance between this and the other vector
@@ -184,6 +196,8 @@ public final class Vector2 {
 	}
 
 	/**
+	 * 两向量之间的长度的平方
+	 * 
 	 * @param v The other vector
 	 * @return the squared distance between this and the other vector
 	 */
@@ -218,8 +232,10 @@ public final class Vector2 {
 	}
 	
 	/**
+	 * <b>向量共线的条件:</b><br>
+	 * 若设a=（x1，y1），b=（x2，y2），则有x1y2=x2y1 , 即x1y2-x2y1=0
 	 * @param v the other vector
-	 * @return The cross product between this and the other vector
+	 * @return The cross product between this and the other vector <br>(0 => a//b)
 	 */
 	public float cross(final Vector2 v) {
 		return this.x * v.y - v.x * this.y;
