@@ -42,6 +42,15 @@ public class FixedStepPhysicsWorld extends PhysicsWorld {
 		this.mMaximumStepsPerUpdate = pMaximumStepsPerUpdate;
 	}
 
+	/*
+	 *
+	 * <br>
+	 * @param pStepsPerSecond
+	 * @param pGravity
+	 * @param pAllowSleep
+	 * @param pVelocityIterations
+	 * @param pPositionIterations)
+	 */
 	public FixedStepPhysicsWorld(final int pStepsPerSecond, final Vector2 pGravity, final boolean pAllowSleep, final int pVelocityIterations, final int pPositionIterations) {
 		this(pStepsPerSecond, Integer.MAX_VALUE, pGravity, pAllowSleep, pVelocityIterations, pPositionIterations);
 	}
